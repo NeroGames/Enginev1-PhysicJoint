@@ -55,7 +55,7 @@ namespace ng
 	    log("PhysicJointScene Scene v0.1");
 
         //select joint type
-	    mJointType = nero::PhysicJoint::Rope_Joint;
+	    mJointType = nero::PhysicJoint::Pulley_Joint;
 
         createJoint(mJointType);
 
@@ -166,6 +166,37 @@ namespace ng
         }
     }
 
+    void PhysicJointScene::createPulleyJoint()
+    {
+        //retrieve objects
+        auto layer   = getObjectManager()->findLayerObject(LayerPool.pulleyJoint);
+        if(!layer) {log("ERROR : layer not found"); return;}
+	    auto objectA = getObjectManager()->findObjectInLayer(ObjectPool.objectA, LayerPool.pulleyJoint);
+	    auto objectB = getObjectManager()->findObjectInLayer(ObjectPool.objectB, LayerPool.pulleyJoint);
+        if(!objectA || !objectB) {log("ERROR : object not found"); return;}
+        mObjectA = nero::PhysicObject::Cast(objectA);
+	    mObjectB = nero::PhysicObject::Cast(objectB);
+
+
+	    //configure joint
+        nero::PulleyJointProperty pulleyJoint;
+        pulleyJoint.name    = "pulley_joint";
+        pulleyJoint.collideConnected    = false;
+        pulleyJoint.groundAnchorA       = sf::Vector2f(200.f, 75.f);
+        pulleyJoint.groundAnchorB       = sf::Vector2f(800.f, 75.f);
+        pulleyJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
+        pulleyJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
+        pulleyJoint.lengthA             = 300.f;
+        pulleyJoint.lengthB             = 300.f;
+        pulleyJoint.ratio               = 1.f;
+
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, pulleyJoint);
+
+        //retrieve joint
+        mPrismaticJoint = nero::PrismaticJoint::Cast(getObjectManager()->findJoint("pulley_joint"));
+    }
+
 
 	void PhysicJointScene::handleKeyboardInput(const sf::Keyboard::Key& key, const bool& isPressed)
     {
@@ -233,6 +264,14 @@ namespace ng
                 createRopeJoint();
 
                 joint_type = "Rope Joint";
+
+            }break;
+
+             case nero::PhysicJoint::Pulley_Joint:
+            {
+                createPulleyJoint();
+
+                joint_type = "Pulley Joint";
 
             }break;
         }

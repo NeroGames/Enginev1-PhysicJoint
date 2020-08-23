@@ -10,6 +10,7 @@
 #include <Nero/model/DistanceJoint.h>
 #include <Nero/model/PrismaticJoint.h>
 #include <Nero/model/RopeJoint.h>
+#include <Nero/model/PulleyJoint.h>
 
 namespace ng
 {
@@ -48,6 +49,9 @@ namespace ng
         	float                           mPrismaticJointLimit;
         	//03 Rope Joint
         	void                            createRopeJoint();
+        	//04 Rope Joint
+        	void                            createPulleyJoint();
+        	nero::PulleyJoint::Ptr          mPulleyJoint;
 
         private:
             float                           distance(nero::PhysicObject::Ptr objectA, nero::PhysicObject::Ptr objectB);
