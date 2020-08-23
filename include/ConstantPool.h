@@ -14,12 +14,14 @@ namespace ng
 	    const std::string objectA			= "object_a";
 	    const std::string objectB			= "object_b";
 	    const std::string jointType			= "joint_type";
+	    const std::string ropeAnchor	    = "rope_anchor";
 	};
 
 	const struct
 	{
 	    const std::string distanceJoint      = "distance_joint";
 	    const std::string prismaticJoint     = "prismatic_joint";
+	    const std::string ropeJoint          = "rope_joint";
 
 	} LayerPool;
 

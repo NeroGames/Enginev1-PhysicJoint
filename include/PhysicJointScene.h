@@ -6,8 +6,10 @@
 #define PHYSICJOINTSCENE_H
 
 #include <Nero/scene/Scene.h>
+#include <Nero/object/PhysicObject.h>
 #include <Nero/model/DistanceJoint.h>
 #include <Nero/model/PrismaticJoint.h>
+#include <Nero/model/RopeJoint.h>
 
 namespace ng
 {
@@ -33,6 +35,8 @@ namespace ng
 	    private:
 	        //joint selector
         	nero::PhysicJoint::Type         mJointType;
+        	nero::PhysicObject::Ptr         mObjectA;
+        	nero::PhysicObject::Ptr         mObjectB;
 
 
 	        //01 Distance Joint
@@ -41,6 +45,12 @@ namespace ng
         	//02 Prismatic Joint
         	void                            createPrismaticJoint();
         	nero::PrismaticJoint::Ptr       mPrismaticJoint;
+        	float                           mPrismaticJointLimit;
+        	//03 Rope Joint
+        	void                            createRopeJoint();
+
+        private:
+            float                           distance(nero::PhysicObject::Ptr objectA, nero::PhysicObject::Ptr objectB);
 
 
 
