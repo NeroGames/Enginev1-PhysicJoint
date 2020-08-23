@@ -1,0 +1,499 @@
+{
+   "scene_name": "PhysicJointScene",
+   "scene_setting": {
+      "draw_aabbs": false,
+      "draw_axis": true,
+      "draw_coms": true,
+      "draw_contact_impulse": false,
+      "draw_contact_normals": false,
+      "draw_contact_points": false,
+      "draw_grid": false,
+      "draw_joints": true,
+      "draw_profile": false,
+      "draw_shapes": true,
+      "draw_stats": true,
+      "enable_continuous": true,
+      "enable_sleep": true,
+      "enable_sub_stepping": false,
+      "enable_warm_starting": true,
+      "frequency": 40.0,
+      "gravity": {
+         "x": 0.0,
+         "y": 10.0
+      },
+      "position_iterations": 3,
+      "velocity_iterations": 8,
+      "view_center": {
+         "x": 0.0,
+         "y": 0.0
+      }
+   },
+   "screen_table": [
+      {
+         "camera_setting": {
+            "default_position": {
+               "x": 400.0,
+               "y": 303.0
+            },
+            "default_rotation": 0.0,
+            "default_zoom": 0.0,
+            "position": {
+               "x": 400.0,
+               "y": 303.0
+            },
+            "rotation": 0.0,
+            "zoom": -36.0
+         },
+         "canvas_color": {
+            "a": 255,
+            "b": 0,
+            "g": 0,
+            "r": 0
+         },
+         "grid_setting": {
+            "color": {
+               "a": 70,
+               "b": 255,
+               "g": 255,
+               "r": 255
+            },
+            "position": {
+               "x": 0,
+               "y": 0
+            },
+            "tile_count": {
+               "x": 16,
+               "y": 12
+            },
+            "tile_size": {
+               "x": 50,
+               "y": 50
+            }
+         },
+         "layer_count": 1,
+         "layer_table": [
+            {
+               "category": "no_category",
+               "child_count": 0,
+               "first_type": "layer_object",
+               "is_selectable": true,
+               "is_selected": true,
+               "is_updateable": true,
+               "is_visible": true,
+               "name": "Layer 1",
+               "object_id": 0,
+               "order": 0,
+               "second_type": "none",
+               "type": "empty_layer"
+            }
+         ],
+         "name": "Start Screen",
+         "object_count": 1
+      }
+   ],
+   "sound_setting": {
+      "music_volume": 50.0,
+      "sound_volume": 50.0
+   },
+   "world_view": {
+      "camera_setting": {
+         "default_position": {
+            "x": 400.0,
+            "y": 303.0
+         },
+         "default_rotation": 0.0,
+         "default_zoom": 0.0,
+         "position": {
+            "x": 414.999359130859,
+            "y": 303.0
+         },
+         "rotation": 0.0,
+         "zoom": -42.0
+      },
+      "canvas_color": {
+         "a": 255,
+         "b": 0,
+         "g": 0,
+         "r": 0
+      },
+      "grid_setting": {
+         "color": {
+            "a": 70,
+            "b": 255,
+            "g": 255,
+            "r": 255
+         },
+         "position": {
+            "x": 0,
+            "y": 0
+         },
+         "tile_count": {
+            "x": 16,
+            "y": 12
+         },
+         "tile_size": {
+            "x": 50,
+            "y": 50
+         }
+      },
+      "layer_count": 3,
+      "layer_table": [
+         {
+            "category": "no_category",
+            "child_count": 3,
+            "first_type": "layer_object",
+            "is_selectable": true,
+            "is_selected": false,
+            "is_updateable": true,
+            "is_visible": true,
+            "mesh_table": [
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "line_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 2,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": -499.45458984375,
+                           "y": 725.708801269531
+                        },
+                        {
+                           "order": 1,
+                           "x": 1235.17529296875,
+                           "y": 725.708801269531
+                        }
+                     ]
+                  },
+                  "name": "no_name",
+                  "object_id": 1,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 441.915069580078,
+                           "y": 259.883361816406
+                        },
+                        {
+                           "order": 1,
+                           "x": 371.204345703125,
+                           "y": 259.883361816406
+                        },
+                        {
+                           "order": 2,
+                           "x": 371.204345703125,
+                           "y": 189.172698974609
+                        },
+                        {
+                           "order": 3,
+                           "x": 441.915069580078,
+                           "y": 189.172760009766
+                        }
+                     ]
+                  },
+                  "name": "object_a",
+                  "object_id": 2,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "dynamic_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 436.125579833984,
+                           "y": 510.584808349609
+                        },
+                        {
+                           "order": 1,
+                           "x": 365.414886474609,
+                           "y": 510.584808349609
+                        },
+                        {
+                           "order": 2,
+                           "x": 365.414886474609,
+                           "y": 439.874145507812
+                        },
+                        {
+                           "order": 3,
+                           "x": 436.125579833984,
+                           "y": 439.874206542969
+                        }
+                     ]
+                  },
+                  "name": "object_b",
+                  "object_id": 3,
+                  "second_type": "mesh_object"
+               }
+            ],
+            "name": "distance_joint",
+            "object_id": 0,
+            "order": 0,
+            "second_type": "mesh_object",
+            "type": "mesh_layer"
+         },
+         {
+            "category": "no_category",
+            "child_count": 3,
+            "first_type": "layer_object",
+            "is_selectable": true,
+            "is_selected": false,
+            "is_updateable": true,
+            "is_visible": false,
+            "mesh_table": [
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "line_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 2,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": -527.563720703125,
+                           "y": 728.397399902344
+                        },
+                        {
+                           "order": 1,
+                           "x": 1198.08227539062,
+                           "y": 728.397399902344
+                        }
+                     ]
+                  },
+                  "name": "no_name",
+                  "object_id": 5,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 397.715270996094,
+                           "y": 248.297012329102
+                        },
+                        {
+                           "order": 1,
+                           "x": 327.004577636719,
+                           "y": 248.297012329102
+                        },
+                        {
+                           "order": 2,
+                           "x": 327.004577636719,
+                           "y": 177.586318969727
+                        },
+                        {
+                           "order": 3,
+                           "x": 397.715270996094,
+                           "y": 177.586349487305
+                        }
+                     ]
+                  },
+                  "name": "object_a",
+                  "object_id": 6,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "dynamic_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 393.198455810547,
+                           "y": 554.26904296875
+                        },
+                        {
+                           "order": 1,
+                           "x": 322.487762451172,
+                           "y": 554.26904296875
+                        },
+                        {
+                           "order": 2,
+                           "x": 322.487762451172,
+                           "y": 483.558349609375
+                        },
+                        {
+                           "order": 3,
+                           "x": 393.198455810547,
+                           "y": 483.558349609375
+                        }
+                     ]
+                  },
+                  "name": "object_b",
+                  "object_id": 7,
+                  "second_type": "mesh_object"
+               }
+            ],
+            "name": "prismatic_joint",
+            "object_id": 4,
+            "order": 1,
+            "second_type": "mesh_object",
+            "type": "mesh_layer"
+         },
+         {
+            "category": "no_category",
+            "child_count": 1,
+            "first_type": "layer_object",
+            "is_selectable": true,
+            "is_selected": true,
+            "is_updateable": true,
+            "is_visible": true,
+            "name": "text_layer",
+            "object_id": 9,
+            "order": 2,
+            "second_type": "text_object",
+            "text_table": [
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "content": "Joint Type : ",
+                  "fill_color": {
+                     "a": 255,
+                     "b": 255,
+                     "g": 255,
+                     "r": 255
+                  },
+                  "first_type": "text_object",
+                  "font": "Sansation",
+                  "font_size": 20.0,
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "letter_spacing": 2.0,
+                  "line_spacing": 2.0,
+                  "name": "joint_type",
+                  "object_id": 8,
+                  "outline_color": {
+                     "a": 255,
+                     "b": 0,
+                     "g": 0,
+                     "r": 0
+                  },
+                  "outline_thickness": 1.0,
+                  "position": {
+                     "x": -374.8115234375,
+                     "y": -62.9778938293457
+                  },
+                  "rotation": 0.0,
+                  "scale": {
+                     "x": 2.29905390739441,
+                     "y": 2.29905390739441
+                  },
+                  "second_type": "text_object",
+                  "style": {
+                     "bold": false,
+                     "italic": false,
+                     "strike_through": false,
+                     "underlined": false
+                  }
+               }
+            ],
+            "type": "text_layer"
+         }
+      ],
+      "object_count": 10
+   }
+}

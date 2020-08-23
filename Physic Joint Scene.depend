@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1598204668 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\main.cpp
+	<Nero/engine/DevEngine.h>
+	"PhysicJointScene.h"
+	<Nero/engine/RenderEngine.h>
+	"PhysicJointScene.h"
+	"LoadingScreen.h"
+
+1598208893 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\physicjointscene.h
+	<Nero/scene/Scene.h>
+	<Nero/model/DistanceJoint.h>
+	<Nero/model/PrismaticJoint.h>
+
+1598203622 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\player.h
+	<Nero/gamelib.h>
+	<Nero/object/PhysicObject.h>
+
+1598203622 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\loadingscreen.h
+	<Nero/engine/StartupScreen.h>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Sprite.hpp>
+
+1546040083 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\resources.rc
+
+1598203622 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\src\loadingscreen.cpp
+	"LoadingScreen.h"
+	<Nero/utility/Utility.h>
+
+1598203622 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\src\player.cpp
+	"Player.h"
+	"ConstantPool.h"
+	<Nero/utility/Utility.h>
+
+1598212545 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\constantpool.h
+
+1598212765 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\src\physicjointscene.cpp
+	"PhysicJointScene.h"
+	"ConstantPool.h"
+	<Nero/scene/CollisionRule.h>
+	<Nero/object/TextObject.h>
+	<Nero/model/DistanceJoint.h>
+	<Nero/model/JointProperty.h>
+
