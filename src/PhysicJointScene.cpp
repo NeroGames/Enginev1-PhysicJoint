@@ -13,6 +13,7 @@ namespace ng
 	PhysicJointScene::PhysicJointScene(nero::Scene::Context context): nero::Scene(context)
 		,mJointType(nero::PhysicJoint::None)
 		,mPrismaticJointLimit(300.f)
+		,mWheelSpeed(200.f)
 	{
 		//ctr
 	}
@@ -55,7 +56,7 @@ namespace ng
 	    log("PhysicJointScene Scene v0.1");
 
         //select joint type
-	    mJointType = nero::PhysicJoint::Pulley_Joint;
+	    mJointType = nero::PhysicJoint::Wheel_Joint;
 
         createJoint(mJointType);
 
@@ -197,15 +198,103 @@ namespace ng
         mPrismaticJoint = nero::PrismaticJoint::Cast(getObjectManager()->findJoint("pulley_joint"));
     }
 
+    void PhysicJointScene::createWheelJoint()
+    {
+        //retrieve objects
+        auto layer   = getObjectManager()->findLayerObject(LayerPool.wheelJoint);
+        if(!layer) {log("ERROR : layer not found"); return;}
+	    auto objectA = getObjectManager()->findObjectInLayer(ObjectPool.objectA, LayerPool.wheelJoint);
+	    auto objectB = getObjectManager()->findObjectInLayer(ObjectPool.objectB, LayerPool.wheelJoint);
+	    auto objectC = getObjectManager()->findObjectInLayer(ObjectPool.objectC, LayerPool.wheelJoint);
+        if(!objectA || !objectB|| !objectC) {log("ERROR : object not found"); return;}
+        mObjectA = nero::PhysicObject::Cast(objectA);
+	    mObjectB = nero::PhysicObject::Cast(objectB);
+	    mObjectC = nero::PhysicObject::Cast(objectC);
+
+
+	    //configure joint (Wheel 1)
+        nero::WheelJointProperty wheelJoint;
+        wheelJoint.name                = "wheel_joint_a";
+        wheelJoint.collideConnected    = true;
+        wheelJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
+        wheelJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
+        wheelJoint.localAxisA          = sf::Vector2f(0.f, 1.f);
+        wheelJoint.referenceAngle      = 0.f;
+        wheelJoint.enableMotor         = true;
+        wheelJoint.maxMotorForce       = 100.f;
+        wheelJoint.motorSpeed          = 0.f;
+        wheelJoint.frequencyHz         = 10.f;
+        wheelJoint.dampingRatio        = 0.5f;
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, wheelJoint);
+        //retrieve joint
+        mWheelJointA = nero::WheelJoint::Cast(getObjectManager()->findJoint("wheel_joint_a"));
+
+        //configure joint (Wheel 1)
+        wheelJoint.name                 = "wheel_joint_b";
+        wheelJoint.enableMotor          = false;
+         //create joint
+        getObjectManager()->createJoint(objectA, objectC, wheelJoint);
+        //retrieve joint
+        mWheelJointB = nero::WheelJoint::Cast(getObjectManager()->findJoint("wheel_joint_b"));
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        //configure joint (Wheel 1)
+        nero::DistanceJointProperty distanceJoint;
+        distanceJoint.name                = "distance_joint_01";
+        distanceJoint.collideConnected    = false;
+        distanceJoint.localAnchorA        = sf::Vector2f(-150.f, 95.f);
+        distanceJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
+        distanceJoint.length              = 0.f;
+        distanceJoint.frequencyHz         = 0.f;
+        distanceJoint.dampingRatio        = 0.1f;
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, distanceJoint);
+
+        //configure joint (Wheel 1)
+        distanceJoint.name                = "distance_joint_02";
+        distanceJoint.localAnchorA        = sf::Vector2f(150.f, 95.f);
+        //create joint
+        getObjectManager()->createJoint(objectA, objectC, distanceJoint);
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        setCameraTarget(objectA);
+        updateTargetOffset(400.f, 400.f, 400.f, 0.f);
+
+    }
+
 
 	void PhysicJointScene::handleKeyboardInput(const sf::Keyboard::Key& key, const bool& isPressed)
     {
-        if(mDistanceJoint)
+        if(mDistanceJoint && isPressed)
         {
             if(key == sf::Keyboard::Up)
                 mDistanceJoint->getJoint()->SetLength(mDistanceJoint->getJoint()->GetLength() - 0.1f);
             else if(key == sf::Keyboard::Down)
                 mDistanceJoint->getJoint()->SetLength(mDistanceJoint->getJoint()->GetLength() + 0.1f);
+        }
+
+        if(mWheelJointA && isPressed)
+        {
+            if(key == sf::Keyboard::Left)
+                mWheelJointA->getJoint()->SetMotorSpeed(-mWheelSpeed);
+            else if(key == sf::Keyboard::Right)
+                mWheelJointA->getJoint()->SetMotorSpeed(mWheelSpeed);
+            else if(key == sf::Keyboard::Down)
+            {
+                mWheelJointA->getJoint()->SetMotorSpeed(0.f);
+                //mObjectA->clearForce();
+                mObjectB->clearAngularVelocity();
+                mObjectC->clearAngularVelocity();
+            }
+
+        }
+        else if(mWheelJointA && !isPressed)
+        {
+            if(key == sf::Keyboard::Left || key == sf::Keyboard::Right)
+                mWheelJointA->getJoint()->SetMotorSpeed(0.f);
         }
     }
 
@@ -267,11 +356,19 @@ namespace ng
 
             }break;
 
-             case nero::PhysicJoint::Pulley_Joint:
+            case nero::PhysicJoint::Pulley_Joint:
             {
                 createPulleyJoint();
 
                 joint_type = "Pulley Joint";
+
+            }break;
+
+            case nero::PhysicJoint::Wheel_Joint:
+            {
+                createWheelJoint();
+
+                joint_type = "Wheel Joint";
 
             }break;
         }

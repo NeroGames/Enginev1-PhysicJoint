@@ -11,8 +11,10 @@ namespace ng
 	{
 		//Player
 	    const std::string player			= "player";
+	    const std::string ground			= "ground";
 	    const std::string objectA			= "object_a";
 	    const std::string objectB			= "object_b";
+	    const std::string objectC			= "object_c";
 	    const std::string jointType			= "joint_type";
 	    const std::string ropeAnchor	    = "rope_anchor";
 	};
@@ -23,6 +25,7 @@ namespace ng
 	    const std::string prismaticJoint     = "prismatic_joint";
 	    const std::string ropeJoint          = "rope_joint";
 	    const std::string pulleyJoint        = "pulley_joint";
+	    const std::string wheelJoint        = "wheel_joint";
 
 	} LayerPool;
 
