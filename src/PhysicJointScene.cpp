@@ -56,7 +56,7 @@ namespace ng
 	    log("PhysicJointScene Scene v0.1");
 
         //select joint type
-	    mJointType = nero::PhysicJoint::Wheel_Joint;
+	    mJointType = nero::PhysicJoint::Revolute_Joint;
 
         createJoint(mJointType);
 
@@ -261,10 +261,69 @@ namespace ng
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         setCameraTarget(objectA);
-        updateTargetOffset(400.f, 400.f, 400.f, 0.f);
+        updateTargetOffset(100.f, 100.f, 400.f, 0.f);
 
     }
 
+    void PhysicJointScene::createWeldJoint()
+    {
+        //retrieve objects
+        auto layer   = getObjectManager()->findLayerObject(LayerPool.weldJoint);
+        if(!layer) {log("ERROR : layer not found"); return;}
+	    auto objectA = getObjectManager()->findObjectInLayer(ObjectPool.objectA, LayerPool.weldJoint);
+	    auto objectB = getObjectManager()->findObjectInLayer(ObjectPool.objectB, LayerPool.weldJoint);
+        if(!objectA || !objectB) {log("ERROR : object not found"); return;}
+        mObjectA = nero::PhysicObject::Cast(objectA);
+	    mObjectB = nero::PhysicObject::Cast(objectB);
+
+	    //configure joint
+        nero::WeldJointProperty weldJoint;
+        weldJoint.name                = "weld_joint";
+        weldJoint.collideConnected    = false;
+        weldJoint.localAnchorA        = sf::Vector2f(0.f, 50.f);
+        weldJoint.localAnchorB        = sf::Vector2f(0.f, -50.f);
+        weldJoint.referenceAngle      = 0.f;
+        weldJoint.frequencyHz         = 5.f;
+        weldJoint.dampingRatio        = 0.5f;
+
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, weldJoint);
+
+        //retrieve joint
+        mWeldJoint = nero::WeldJoint::Cast(getObjectManager()->findJoint("weld_joint"));
+    }
+
+    void PhysicJointScene::createRevoluteJoint()
+    {
+        //retrieve objects
+        auto layer   = getObjectManager()->findLayerObject(LayerPool.revoluteJoint);
+        if(!layer) {log("ERROR : layer not found"); return;}
+	    auto objectA = getObjectManager()->findObjectInLayer(ObjectPool.objectA, LayerPool.revoluteJoint);
+	    auto objectB = getObjectManager()->findObjectInLayer(ObjectPool.objectB, LayerPool.revoluteJoint);
+        if(!objectA || !objectB) {log("ERROR : object not found"); return;}
+        mObjectA = nero::PhysicObject::Cast(objectA);
+	    mObjectB = nero::PhysicObject::Cast(objectB);
+
+	    //configure joint
+        nero::RevoluteJointProperty revoluteJoint;
+        revoluteJoint.name                = "revolute_joint";
+        revoluteJoint.collideConnected    = false;
+        revoluteJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
+        revoluteJoint.localAnchorB        = sf::Vector2f(0.f, -220.f);
+        revoluteJoint.referenceAngle      = 0.f;
+        revoluteJoint.enableLimit         = false;
+        revoluteJoint.lowerAngle          = 0.f;
+        revoluteJoint.upperAngle          = 0.f;
+        revoluteJoint.enableMotor         = true;
+        revoluteJoint.maxMotorForce       = 50.f;
+        revoluteJoint.motorSpeed          = 10.f;
+
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, revoluteJoint);
+
+        //retrieve joint
+        mRevoluteJoint = nero::RevoluteJoint::Cast(getObjectManager()->findJoint("revolute_joint"));
+    }
 
 	void PhysicJointScene::handleKeyboardInput(const sf::Keyboard::Key& key, const bool& isPressed)
     {
@@ -369,6 +428,22 @@ namespace ng
                 createWheelJoint();
 
                 joint_type = "Wheel Joint";
+
+            }break;
+
+            case nero::PhysicJoint::Weld_Joint:
+            {
+                createWeldJoint();
+
+                joint_type = "Weld Joint";
+
+            }break;
+
+            case nero::PhysicJoint::Revolute_Joint:
+            {
+                createRevoluteJoint();
+
+                joint_type = "Revolute Joint";
 
             }break;
         }

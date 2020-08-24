@@ -25,7 +25,9 @@ namespace ng
 	    const std::string prismaticJoint     = "prismatic_joint";
 	    const std::string ropeJoint          = "rope_joint";
 	    const std::string pulleyJoint        = "pulley_joint";
-	    const std::string wheelJoint        = "wheel_joint";
+	    const std::string wheelJoint         = "wheel_joint";
+	    const std::string weldJoint          = "weld_joint";
+	    const std::string revoluteJoint      = "revolute_joint";
 
 	} LayerPool;
 
