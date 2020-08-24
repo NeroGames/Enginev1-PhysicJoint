@@ -6,7 +6,7 @@
 	"PhysicJointScene.h"
 	"LoadingScreen.h"
 
-1598311238 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\physicjointscene.h
+1598314084 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\physicjointscene.h
 	<Nero/scene/Scene.h>
 	<Nero/object/PhysicObject.h>
 	<Nero/model/DistanceJoint.h>
@@ -16,6 +16,8 @@
 	<Nero/model/WheelJoint.h>
 	<Nero/model/WeldJoint.h>
 	<Nero/model/RevoluteJoint.h>
+	<Nero/model/GearJoint.h>
+	<Nero/model/FrictionJoint.h>
 
 1598203622 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\player.h
 	<Nero/gamelib.h>
@@ -37,9 +39,9 @@
 	"ConstantPool.h"
 	<Nero/utility/Utility.h>
 
-1598311290 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\constantpool.h
+1598314691 c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\include\constantpool.h
 
-1598230408 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\src\physicjointscene.cpp
+1598314483 source:c:\users\sk-landry\desktop\nero-game-engine-r1.0.4\projects\physic joint scene\src\physicjointscene.cpp
 	"PhysicJointScene.h"
 	"ConstantPool.h"
 	<Nero/scene/CollisionRule.h>

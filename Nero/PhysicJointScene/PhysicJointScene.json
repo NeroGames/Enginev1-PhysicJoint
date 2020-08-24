@@ -136,7 +136,7 @@
             "y": 50
          }
       },
-      "layer_count": 8,
+      "layer_count": 9,
       "layer_table": [
          {
             "category": "no_category",
@@ -1536,9 +1536,9 @@
             "child_count": 3,
             "first_type": "layer_object",
             "is_selectable": true,
-            "is_selected": true,
+            "is_selected": false,
             "is_updateable": true,
-            "is_visible": true,
+            "is_visible": false,
             "mesh_table": [
                {
                   "category": "no_category",
@@ -1677,8 +1677,239 @@
             "order": 7,
             "second_type": "mesh_object",
             "type": "mesh_layer"
+         },
+         {
+            "category": "no_category",
+            "child_count": 5,
+            "first_type": "layer_object",
+            "is_selectable": true,
+            "is_selected": true,
+            "is_updateable": true,
+            "is_visible": true,
+            "mesh_table": [
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "line_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 2,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": -1403.13586425781,
+                           "y": 787.132141113281
+                        },
+                        {
+                           "order": 1,
+                           "x": 1763.93444824219,
+                           "y": 787.132141113281
+                        }
+                     ]
+                  },
+                  "name": "no_name",
+                  "object_id": 42,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "dynamic_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 735.625183105469,
+                           "y": 526.676696777344
+                        },
+                        {
+                           "order": 1,
+                           "x": 664.914367675781,
+                           "y": 526.676696777344
+                        },
+                        {
+                           "order": 2,
+                           "x": 664.914489746094,
+                           "y": 222.069107055664
+                        },
+                        {
+                           "order": 3,
+                           "x": 735.625183105469,
+                           "y": 222.06916809082
+                        }
+                     ]
+                  },
+                  "name": "object_b",
+                  "object_id": 43,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "circle_mesh",
+                     "type": "dynamic_mesh",
+                     "vertex_count": 2,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": -199.77815246582,
+                           "y": 221.308074951172
+                        },
+                        {
+                           "order": 1,
+                           "x": -116.383689880371,
+                           "y": 221.308074951172
+                        }
+                     ]
+                  },
+                  "name": "object_a",
+                  "object_id": 44,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": -195.245681762695,
+                           "y": 85.1535415649414
+                        },
+                        {
+                           "order": 1,
+                           "x": -229.066390991211,
+                           "y": 85.1535415649414
+                        },
+                        {
+                           "order": 2,
+                           "x": -229.066390991211,
+                           "y": 51.3328437805176
+                        },
+                        {
+                           "order": 3,
+                           "x": -195.245681762695,
+                           "y": 51.3328704833984
+                        }
+                     ]
+                  },
+                  "name": "object_c",
+                  "object_id": 45,
+                  "second_type": "mesh_object"
+               },
+               {
+                  "category": "no_category",
+                  "child_count": 0,
+                  "first_type": "mesh_object",
+                  "is_selectable": true,
+                  "is_selected": false,
+                  "is_updateable": true,
+                  "is_visible": true,
+                  "mesh": {
+                     "allow_sleep": true,
+                     "density": 1.0,
+                     "fixed_rotation": false,
+                     "friction": 0.100000001490116,
+                     "gravity_scale": 3.0,
+                     "is_sensor": false,
+                     "is_valid": true,
+                     "restitution": 0.100000001490116,
+                     "shape": "polygon_mesh",
+                     "type": "static_mesh",
+                     "vertex_count": 4,
+                     "vertex_table": [
+                        {
+                           "order": 0,
+                           "x": 709.111328125,
+                           "y": 78.2742462158203
+                        },
+                        {
+                           "order": 1,
+                           "x": 675.290588378906,
+                           "y": 78.2742462158203
+                        },
+                        {
+                           "order": 2,
+                           "x": 675.290588378906,
+                           "y": 44.4535331726074
+                        },
+                        {
+                           "order": 3,
+                           "x": 709.111328125,
+                           "y": 44.453556060791
+                        }
+                     ]
+                  },
+                  "name": "object_d",
+                  "object_id": 46,
+                  "second_type": "mesh_object"
+               }
+            ],
+            "name": "gear_joint",
+            "object_id": 41,
+            "order": 8,
+            "second_type": "mesh_object",
+            "type": "mesh_layer"
          }
       ],
-      "object_count": 41
+      "object_count": 47
    }
 }

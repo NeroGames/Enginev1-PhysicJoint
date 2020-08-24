@@ -18986,3 +18986,648 @@
 2020-08-24 18:50:23,743 INFO [default] 
  ## -- Engine closed at 24/8/2020 18:50:23-- ###
 
+2020-08-24 18:59:26,669 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 18:59:26,669 INFO [default] nero development engine starting
+2020-08-24 18:59:26,669 INFO [default] loading engine configuration
+2020-08-24 18:59:26,669 INFO [default] setting up sfml render window
+2020-08-24 18:59:26,675 INFO [default] building startup screen
+2020-08-24 18:59:26,680 INFO [default] starting background task
+2020-08-24 18:59:26,798 INFO [default] building resource manager
+2020-08-24 18:59:26,800 INFO [default] loading font resources
+2020-08-24 18:59:26,800 INFO [default] Resource path : resource/font
+2020-08-24 18:59:26,801 INFO [default] loaded : Sansation
+2020-08-24 18:59:26,801 INFO [default] loading sound resources
+2020-08-24 18:59:26,801 INFO [default] resource path : resource/sound
+2020-08-24 18:59:26,802 INFO [default] loading music resources
+2020-08-24 18:59:26,802 INFO [default] Resource path : resource/music
+2020-08-24 18:59:26,802 INFO [default] loading texture resources
+2020-08-24 18:59:26,802 INFO [default] Resource path : resource/texture
+2020-08-24 18:59:26,802 INFO [default] loading animation resources
+2020-08-24 18:59:26,802 INFO [default] Resource path : resource/animation
+2020-08-24 18:59:26,803 INFO [default] building engine-ui
+2020-08-24 18:59:27,107 INFO [default] providing engine setting to engine-ui
+2020-08-24 18:59:27,107 INFO [default] providing resource manager to engine-ui
+2020-08-24 18:59:27,107 INFO [default] building engine interface
+2020-08-24 18:59:32,977 INFO [default] building camera
+2020-08-24 18:59:32,977 INFO [default] building scene manager
+2020-08-24 18:59:32,977 INFO [default] adjusting background task time
+2020-08-24 18:59:32,977 INFO [default] adding the default scene
+2020-08-24 18:59:32,977 INFO [default] registering all scenes
+2020-08-24 18:59:32,977 INFO [default] adding scene : PhysicJointScene
+2020-08-24 18:59:33,018 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 18:59:33,018 INFO [default] loading scene
+2020-08-24 18:59:33,022 INFO [default] loading scene
+2020-08-24 18:59:33,022 INFO [default] loading text
+2020-08-24 18:59:33,032 INFO [default] loading text 1
+2020-08-24 18:59:33,032 INFO [default] loading text 2
+2020-08-24 18:59:33,032 INFO [default] loading text 3
+2020-08-24 18:59:33,036 INFO [default] loading scene
+2020-08-24 18:59:33,038 INFO [default] scene registration complete
+2020-08-24 18:59:33,038 INFO [default] adding scene : ## + default + ##
+2020-08-24 18:59:33,039 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 18:59:33,039 INFO [default] loading scene
+2020-08-24 18:59:33,039 INFO [default] loading scene
+2020-08-24 18:59:33,040 INFO [default] loading scene
+2020-08-24 18:59:33,040 INFO [default] scene registration complete
+2020-08-24 18:59:33,040 INFO [default] setting up the engine-ui
+2020-08-24 18:59:33,044 INFO [default] update engine-ui log
+2020-08-24 18:59:33,044 INFO [default] Nero Game Engine --- Log file 24/8/2020 18:59:33
+
+2020-08-24 18:59:33,044 INFO [default] Restoring last Scene
+2020-08-24 18:59:33,045 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 18:59:33,079 INFO [default] Background task completed
+2020-08-24 18:59:33,079 INFO [default] Nero Development Engine started successfully
+2020-08-24 18:59:36,266 INFO [default] closing the Engine
+2020-08-24 18:59:36,266 INFO [default] stopping music
+2020-08-24 18:59:36,267 INFO [default] saving Engine Settings
+2020-08-24 18:59:36,269 INFO [default] saving all Scenes
+2020-08-24 18:59:36,334 INFO [default] 
+ ## -- Engine closed at 24/8/2020 18:59:36-- ###
+
+2020-08-24 19:02:11,695 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:02:11,695 INFO [default] nero development engine starting
+2020-08-24 19:02:11,695 INFO [default] loading engine configuration
+2020-08-24 19:02:11,696 INFO [default] setting up sfml render window
+2020-08-24 19:02:11,702 INFO [default] building startup screen
+2020-08-24 19:02:11,708 INFO [default] starting background task
+2020-08-24 19:02:11,818 INFO [default] building resource manager
+2020-08-24 19:02:11,820 INFO [default] loading font resources
+2020-08-24 19:02:11,820 INFO [default] Resource path : resource/font
+2020-08-24 19:02:11,821 INFO [default] loaded : Sansation
+2020-08-24 19:02:11,821 INFO [default] loading sound resources
+2020-08-24 19:02:11,821 INFO [default] resource path : resource/sound
+2020-08-24 19:02:11,822 INFO [default] loading music resources
+2020-08-24 19:02:11,822 INFO [default] Resource path : resource/music
+2020-08-24 19:02:11,822 INFO [default] loading texture resources
+2020-08-24 19:02:11,822 INFO [default] Resource path : resource/texture
+2020-08-24 19:02:11,823 INFO [default] loading animation resources
+2020-08-24 19:02:11,823 INFO [default] Resource path : resource/animation
+2020-08-24 19:02:11,823 INFO [default] building engine-ui
+2020-08-24 19:02:12,096 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:02:12,096 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:02:12,096 INFO [default] building engine interface
+2020-08-24 19:02:19,174 INFO [default] building camera
+2020-08-24 19:02:19,174 INFO [default] building scene manager
+2020-08-24 19:02:19,174 INFO [default] adjusting background task time
+2020-08-24 19:02:19,174 INFO [default] adding the default scene
+2020-08-24 19:02:19,174 INFO [default] registering all scenes
+2020-08-24 19:02:19,174 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:02:19,215 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:02:19,215 INFO [default] loading scene
+2020-08-24 19:02:19,218 INFO [default] loading scene
+2020-08-24 19:02:19,219 INFO [default] loading text
+2020-08-24 19:02:19,231 INFO [default] loading text 1
+2020-08-24 19:02:19,231 INFO [default] loading text 2
+2020-08-24 19:02:19,231 INFO [default] loading text 3
+2020-08-24 19:02:19,235 INFO [default] loading scene
+2020-08-24 19:02:19,236 INFO [default] scene registration complete
+2020-08-24 19:02:19,236 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:02:19,237 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:02:19,237 INFO [default] loading scene
+2020-08-24 19:02:19,238 INFO [default] loading scene
+2020-08-24 19:02:19,238 INFO [default] loading scene
+2020-08-24 19:02:19,238 INFO [default] scene registration complete
+2020-08-24 19:02:19,238 INFO [default] setting up the engine-ui
+2020-08-24 19:02:19,243 INFO [default] update engine-ui log
+2020-08-24 19:02:19,243 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:2:19
+
+2020-08-24 19:02:19,243 INFO [default] Restoring last Scene
+2020-08-24 19:02:19,243 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:02:19,278 INFO [default] Background task completed
+2020-08-24 19:02:19,278 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:02:21,666 INFO [default] Hiding Layer [revolute_joint]
+2020-08-24 19:02:22,242 INFO [default] adding new Layer [Layer 9]
+2020-08-24 19:02:31,659 INFO [default] adding Mesh Object of Type [Line]
+2020-08-24 19:02:37,521 INFO [default] adding Mesh Object of Type [Polygon]
+2020-08-24 19:02:48,161 INFO [default] adding Mesh Object of Type [Circle]
+2020-08-24 19:03:06,789 INFO [default] loading scene
+2020-08-24 19:03:06,789 INFO [default] loading text
+2020-08-24 19:03:06,790 INFO [default] loading text 1
+2020-08-24 19:03:06,790 INFO [default] loading text 2
+2020-08-24 19:03:06,790 INFO [default] loading text 3
+2020-08-24 19:03:12,295 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:03:13,522 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:03:13,524 INFO [default] checking Scene Objects ...
+2020-08-24 19:03:13,524 INFO [default] checking World Objects ...
+2020-08-24 19:03:13,525 INFO [default] checking Screen Objects ...
+2020-08-24 19:03:13,525 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:03:24,507 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:03:24,507 INFO [default] nero development engine starting
+2020-08-24 19:03:24,507 INFO [default] loading engine configuration
+2020-08-24 19:03:24,508 INFO [default] setting up sfml render window
+2020-08-24 19:03:24,513 INFO [default] building startup screen
+2020-08-24 19:03:24,519 INFO [default] starting background task
+2020-08-24 19:03:24,635 INFO [default] building resource manager
+2020-08-24 19:03:24,638 INFO [default] loading font resources
+2020-08-24 19:03:24,638 INFO [default] Resource path : resource/font
+2020-08-24 19:03:24,638 INFO [default] loaded : Sansation
+2020-08-24 19:03:24,639 INFO [default] loading sound resources
+2020-08-24 19:03:24,639 INFO [default] resource path : resource/sound
+2020-08-24 19:03:24,640 INFO [default] loading music resources
+2020-08-24 19:03:24,640 INFO [default] Resource path : resource/music
+2020-08-24 19:03:24,640 INFO [default] loading texture resources
+2020-08-24 19:03:24,640 INFO [default] Resource path : resource/texture
+2020-08-24 19:03:24,641 INFO [default] loading animation resources
+2020-08-24 19:03:24,641 INFO [default] Resource path : resource/animation
+2020-08-24 19:03:24,641 INFO [default] building engine-ui
+2020-08-24 19:03:24,903 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:03:24,904 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:03:24,904 INFO [default] building engine interface
+2020-08-24 19:03:30,751 INFO [default] building camera
+2020-08-24 19:03:30,751 INFO [default] building scene manager
+2020-08-24 19:03:30,751 INFO [default] adjusting background task time
+2020-08-24 19:03:30,751 INFO [default] adding the default scene
+2020-08-24 19:03:30,751 INFO [default] registering all scenes
+2020-08-24 19:03:30,751 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:03:30,791 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:03:30,792 INFO [default] loading scene
+2020-08-24 19:03:30,796 INFO [default] loading scene
+2020-08-24 19:03:30,796 INFO [default] loading text
+2020-08-24 19:03:30,819 INFO [default] loading text 1
+2020-08-24 19:03:30,820 INFO [default] loading text 2
+2020-08-24 19:03:30,820 INFO [default] loading text 3
+2020-08-24 19:03:30,824 INFO [default] loading scene
+2020-08-24 19:03:30,825 INFO [default] scene registration complete
+2020-08-24 19:03:30,826 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:03:30,827 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:03:30,827 INFO [default] loading scene
+2020-08-24 19:03:30,827 INFO [default] loading scene
+2020-08-24 19:03:30,827 INFO [default] loading scene
+2020-08-24 19:03:30,828 INFO [default] scene registration complete
+2020-08-24 19:03:30,828 INFO [default] setting up the engine-ui
+2020-08-24 19:03:30,832 INFO [default] update engine-ui log
+2020-08-24 19:03:30,832 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:3:30
+
+2020-08-24 19:03:30,832 INFO [default] Restoring last Scene
+2020-08-24 19:03:30,833 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:03:30,870 INFO [default] Background task completed
+2020-08-24 19:03:30,870 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:03:55,363 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:03:55,364 INFO [default] checking Scene Objects ...
+2020-08-24 19:03:55,364 INFO [default] checking World Objects ...
+2020-08-24 19:03:55,365 INFO [default] checking Screen Objects ...
+2020-08-24 19:03:55,365 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:04:04,283 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:04:04,283 INFO [default] nero development engine starting
+2020-08-24 19:04:04,283 INFO [default] loading engine configuration
+2020-08-24 19:04:04,284 INFO [default] setting up sfml render window
+2020-08-24 19:04:04,297 INFO [default] building startup screen
+2020-08-24 19:04:04,302 INFO [default] starting background task
+2020-08-24 19:04:05,102 INFO [default] building resource manager
+2020-08-24 19:04:05,201 INFO [default] loading font resources
+2020-08-24 19:04:05,201 INFO [default] Resource path : resource/font
+2020-08-24 19:04:05,286 INFO [default] loaded : Sansation
+2020-08-24 19:04:05,287 INFO [default] loading sound resources
+2020-08-24 19:04:05,287 INFO [default] resource path : resource/sound
+2020-08-24 19:04:05,292 INFO [default] loading music resources
+2020-08-24 19:04:05,292 INFO [default] Resource path : resource/music
+2020-08-24 19:04:05,293 INFO [default] loading texture resources
+2020-08-24 19:04:05,293 INFO [default] Resource path : resource/texture
+2020-08-24 19:04:05,297 INFO [default] loading animation resources
+2020-08-24 19:04:05,297 INFO [default] Resource path : resource/animation
+2020-08-24 19:04:05,302 INFO [default] building engine-ui
+2020-08-24 19:04:05,603 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:04:05,603 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:04:05,603 INFO [default] building engine interface
+2020-08-24 19:04:12,403 INFO [default] building camera
+2020-08-24 19:04:12,403 INFO [default] building scene manager
+2020-08-24 19:04:12,403 INFO [default] adjusting background task time
+2020-08-24 19:04:12,409 INFO [default] adding the default scene
+2020-08-24 19:04:12,409 INFO [default] registering all scenes
+2020-08-24 19:04:12,409 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:04:12,795 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:04:12,795 INFO [default] loading scene
+2020-08-24 19:04:12,865 INFO [default] loading scene
+2020-08-24 19:04:12,867 INFO [default] loading text
+2020-08-24 19:04:12,896 INFO [default] loading text 1
+2020-08-24 19:04:12,897 INFO [default] loading text 2
+2020-08-24 19:04:12,898 INFO [default] loading text 3
+2020-08-24 19:04:12,938 INFO [default] loading scene
+2020-08-24 19:04:13,001 INFO [default] scene registration complete
+2020-08-24 19:04:13,001 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:04:13,003 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:04:13,003 INFO [default] loading scene
+2020-08-24 19:04:13,004 INFO [default] loading scene
+2020-08-24 19:04:13,004 INFO [default] loading scene
+2020-08-24 19:04:13,005 INFO [default] scene registration complete
+2020-08-24 19:04:13,005 INFO [default] setting up the engine-ui
+2020-08-24 19:04:13,011 INFO [default] update engine-ui log
+2020-08-24 19:04:13,011 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:4:13
+
+2020-08-24 19:04:13,011 INFO [default] Restoring last Scene
+2020-08-24 19:04:13,011 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:04:13,105 INFO [default] Background task completed
+2020-08-24 19:04:13,105 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:06:45,794 INFO [default] adding Mesh Object of Type [Polygon]
+2020-08-24 19:07:13,648 INFO [default] copying Object [object_c] Right
+2020-08-24 19:07:30,881 INFO [default] changing Mesh Type to : Static Mesh
+2020-08-24 19:07:34,716 INFO [default] changing Mesh Type to : Static Mesh
+2020-08-24 19:07:36,900 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:14:51,679 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:14:52,724 INFO [default] closing the Engine
+2020-08-24 19:14:52,724 INFO [default] stopping music
+2020-08-24 19:14:52,725 INFO [default] saving Engine Settings
+2020-08-24 19:14:52,727 INFO [default] saving all Scenes
+2020-08-24 19:14:53,128 INFO [default] 
+ ## -- Engine closed at 24/8/2020 19:14:53-- ###
+
+2020-08-24 19:15:15,900 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:15:15,900 INFO [default] nero development engine starting
+2020-08-24 19:15:15,900 INFO [default] loading engine configuration
+2020-08-24 19:15:15,900 INFO [default] setting up sfml render window
+2020-08-24 19:15:15,906 INFO [default] building startup screen
+2020-08-24 19:15:15,911 INFO [default] starting background task
+2020-08-24 19:15:16,008 INFO [default] building resource manager
+2020-08-24 19:15:16,010 INFO [default] loading font resources
+2020-08-24 19:15:16,010 INFO [default] Resource path : resource/font
+2020-08-24 19:15:16,011 INFO [default] loaded : Sansation
+2020-08-24 19:15:16,011 INFO [default] loading sound resources
+2020-08-24 19:15:16,011 INFO [default] resource path : resource/sound
+2020-08-24 19:15:16,011 INFO [default] loading music resources
+2020-08-24 19:15:16,011 INFO [default] Resource path : resource/music
+2020-08-24 19:15:16,011 INFO [default] loading texture resources
+2020-08-24 19:15:16,011 INFO [default] Resource path : resource/texture
+2020-08-24 19:15:16,012 INFO [default] loading animation resources
+2020-08-24 19:15:16,012 INFO [default] Resource path : resource/animation
+2020-08-24 19:15:16,012 INFO [default] building engine-ui
+2020-08-24 19:15:16,348 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:15:16,348 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:15:16,348 INFO [default] building engine interface
+2020-08-24 19:15:22,075 INFO [default] building camera
+2020-08-24 19:15:22,075 INFO [default] building scene manager
+2020-08-24 19:15:22,075 INFO [default] adjusting background task time
+2020-08-24 19:15:22,075 INFO [default] adding the default scene
+2020-08-24 19:15:22,075 INFO [default] registering all scenes
+2020-08-24 19:15:22,075 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:15:22,112 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:15:22,112 INFO [default] loading scene
+2020-08-24 19:15:22,116 INFO [default] loading scene
+2020-08-24 19:15:22,117 INFO [default] loading text
+2020-08-24 19:15:22,131 INFO [default] loading text 1
+2020-08-24 19:15:22,132 INFO [default] loading text 2
+2020-08-24 19:15:22,132 INFO [default] loading text 3
+2020-08-24 19:15:22,137 INFO [default] loading scene
+2020-08-24 19:15:22,138 INFO [default] scene registration complete
+2020-08-24 19:15:22,138 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:15:22,139 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:15:22,139 INFO [default] loading scene
+2020-08-24 19:15:22,140 INFO [default] loading scene
+2020-08-24 19:15:22,140 INFO [default] loading scene
+2020-08-24 19:15:22,140 INFO [default] scene registration complete
+2020-08-24 19:15:22,140 INFO [default] setting up the engine-ui
+2020-08-24 19:15:22,145 INFO [default] update engine-ui log
+2020-08-24 19:15:22,145 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:15:22
+
+2020-08-24 19:15:22,145 INFO [default] Restoring last Scene
+2020-08-24 19:15:22,145 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:15:22,188 INFO [default] Background task completed
+2020-08-24 19:15:22,188 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:15:23,668 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:15:23,669 INFO [default] checking Scene Objects ...
+2020-08-24 19:15:23,670 INFO [default] checking World Objects ...
+2020-08-24 19:15:23,670 INFO [default] checking Screen Objects ...
+2020-08-24 19:15:23,670 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:15:23,671 INFO [default] current mode : Scene - Play
+2020-08-24 19:15:28,375 INFO [default] stepping Scene [PhysicJointScene]
+2020-08-24 19:15:33,483 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:15:33,483 INFO [default] nero development engine starting
+2020-08-24 19:15:33,483 INFO [default] loading engine configuration
+2020-08-24 19:15:33,484 INFO [default] setting up sfml render window
+2020-08-24 19:15:33,489 INFO [default] building startup screen
+2020-08-24 19:15:33,494 INFO [default] starting background task
+2020-08-24 19:15:33,592 INFO [default] building resource manager
+2020-08-24 19:15:33,594 INFO [default] loading font resources
+2020-08-24 19:15:33,594 INFO [default] Resource path : resource/font
+2020-08-24 19:15:33,595 INFO [default] loaded : Sansation
+2020-08-24 19:15:33,595 INFO [default] loading sound resources
+2020-08-24 19:15:33,595 INFO [default] resource path : resource/sound
+2020-08-24 19:15:33,595 INFO [default] loading music resources
+2020-08-24 19:15:33,595 INFO [default] Resource path : resource/music
+2020-08-24 19:15:33,595 INFO [default] loading texture resources
+2020-08-24 19:15:33,595 INFO [default] Resource path : resource/texture
+2020-08-24 19:15:33,596 INFO [default] loading animation resources
+2020-08-24 19:15:33,596 INFO [default] Resource path : resource/animation
+2020-08-24 19:15:33,596 INFO [default] building engine-ui
+2020-08-24 19:15:34,026 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:15:34,027 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:15:34,027 INFO [default] building engine interface
+2020-08-24 19:15:39,500 INFO [default] building camera
+2020-08-24 19:15:39,501 INFO [default] building scene manager
+2020-08-24 19:15:39,501 INFO [default] adjusting background task time
+2020-08-24 19:15:39,501 INFO [default] adding the default scene
+2020-08-24 19:15:39,501 INFO [default] registering all scenes
+2020-08-24 19:15:39,501 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:15:39,540 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:15:39,540 INFO [default] loading scene
+2020-08-24 19:15:39,544 INFO [default] loading scene
+2020-08-24 19:15:39,545 INFO [default] loading text
+2020-08-24 19:15:39,557 INFO [default] loading text 1
+2020-08-24 19:15:39,557 INFO [default] loading text 2
+2020-08-24 19:15:39,557 INFO [default] loading text 3
+2020-08-24 19:15:39,562 INFO [default] loading scene
+2020-08-24 19:15:39,563 INFO [default] scene registration complete
+2020-08-24 19:15:39,563 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:15:39,564 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:15:39,564 INFO [default] loading scene
+2020-08-24 19:15:39,565 INFO [default] loading scene
+2020-08-24 19:15:39,565 INFO [default] loading scene
+2020-08-24 19:15:39,565 INFO [default] scene registration complete
+2020-08-24 19:15:39,565 INFO [default] setting up the engine-ui
+2020-08-24 19:15:39,569 INFO [default] update engine-ui log
+2020-08-24 19:15:39,570 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:15:39
+
+2020-08-24 19:15:39,570 INFO [default] Restoring last Scene
+2020-08-24 19:15:39,570 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:15:39,607 INFO [default] Background task completed
+2020-08-24 19:15:39,608 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:15:41,145 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:15:41,147 INFO [default] checking Scene Objects ...
+2020-08-24 19:15:41,147 INFO [default] checking World Objects ...
+2020-08-24 19:15:41,147 INFO [default] checking Screen Objects ...
+2020-08-24 19:15:41,148 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:15:41,148 INFO [default] current mode : Scene - Play
+2020-08-24 19:15:43,476 INFO [default] closing the Engine
+2020-08-24 19:15:43,477 INFO [default] stopping music
+2020-08-24 19:15:43,477 INFO [default] saving Engine Settings
+2020-08-24 19:15:43,479 INFO [default] saving all Scenes
+2020-08-24 19:15:43,539 INFO [default] 
+ ## -- Engine closed at 24/8/2020 19:15:43-- ###
+
+2020-08-24 19:16:05,449 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:16:05,449 INFO [default] nero development engine starting
+2020-08-24 19:16:05,449 INFO [default] loading engine configuration
+2020-08-24 19:16:05,450 INFO [default] setting up sfml render window
+2020-08-24 19:16:05,456 INFO [default] building startup screen
+2020-08-24 19:16:05,462 INFO [default] starting background task
+2020-08-24 19:16:05,583 INFO [default] building resource manager
+2020-08-24 19:16:05,585 INFO [default] loading font resources
+2020-08-24 19:16:05,585 INFO [default] Resource path : resource/font
+2020-08-24 19:16:05,586 INFO [default] loaded : Sansation
+2020-08-24 19:16:05,586 INFO [default] loading sound resources
+2020-08-24 19:16:05,586 INFO [default] resource path : resource/sound
+2020-08-24 19:16:05,587 INFO [default] loading music resources
+2020-08-24 19:16:05,587 INFO [default] Resource path : resource/music
+2020-08-24 19:16:05,587 INFO [default] loading texture resources
+2020-08-24 19:16:05,587 INFO [default] Resource path : resource/texture
+2020-08-24 19:16:05,588 INFO [default] loading animation resources
+2020-08-24 19:16:05,588 INFO [default] Resource path : resource/animation
+2020-08-24 19:16:05,588 INFO [default] building engine-ui
+2020-08-24 19:16:05,865 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:16:05,865 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:16:05,865 INFO [default] building engine interface
+2020-08-24 19:16:13,039 INFO [default] building camera
+2020-08-24 19:16:13,039 INFO [default] building scene manager
+2020-08-24 19:16:13,039 INFO [default] adjusting background task time
+2020-08-24 19:16:13,045 INFO [default] adding the default scene
+2020-08-24 19:16:13,045 INFO [default] registering all scenes
+2020-08-24 19:16:13,045 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:16:13,089 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:16:13,089 INFO [default] loading scene
+2020-08-24 19:16:13,093 INFO [default] loading scene
+2020-08-24 19:16:13,094 INFO [default] loading text
+2020-08-24 19:16:13,102 INFO [default] loading text 1
+2020-08-24 19:16:13,102 INFO [default] loading text 2
+2020-08-24 19:16:13,102 INFO [default] loading text 3
+2020-08-24 19:16:13,109 INFO [default] loading scene
+2020-08-24 19:16:13,110 INFO [default] scene registration complete
+2020-08-24 19:16:13,110 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:16:13,112 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:16:13,112 INFO [default] loading scene
+2020-08-24 19:16:13,112 INFO [default] loading scene
+2020-08-24 19:16:13,112 INFO [default] loading scene
+2020-08-24 19:16:13,113 INFO [default] scene registration complete
+2020-08-24 19:16:13,113 INFO [default] setting up the engine-ui
+2020-08-24 19:16:13,117 INFO [default] update engine-ui log
+2020-08-24 19:16:13,118 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:16:13
+
+2020-08-24 19:16:13,118 INFO [default] Restoring last Scene
+2020-08-24 19:16:13,118 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:16:13,162 INFO [default] Background task completed
+2020-08-24 19:16:13,162 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:16:15,227 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:16:15,229 INFO [default] checking Scene Objects ...
+2020-08-24 19:16:15,229 INFO [default] checking World Objects ...
+2020-08-24 19:16:15,230 INFO [default] checking Screen Objects ...
+2020-08-24 19:16:15,230 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:16:15,230 INFO [default] current mode : Scene - Play
+2020-08-24 19:16:21,796 INFO [default] current mode : Scene - Object
+2020-08-24 19:16:30,123 INFO [default] closing the Engine
+2020-08-24 19:16:30,123 INFO [default] stopping music
+2020-08-24 19:16:30,123 INFO [default] saving Engine Settings
+2020-08-24 19:16:30,126 INFO [default] saving all Scenes
+2020-08-24 19:16:30,186 INFO [default] 
+ ## -- Engine closed at 24/8/2020 19:16:30-- ###
+
+2020-08-24 19:17:13,350 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:17:13,350 INFO [default] nero development engine starting
+2020-08-24 19:17:13,350 INFO [default] loading engine configuration
+2020-08-24 19:17:13,351 INFO [default] setting up sfml render window
+2020-08-24 19:17:13,355 INFO [default] building startup screen
+2020-08-24 19:17:13,361 INFO [default] starting background task
+2020-08-24 19:17:13,459 INFO [default] building resource manager
+2020-08-24 19:17:13,461 INFO [default] loading font resources
+2020-08-24 19:17:13,461 INFO [default] Resource path : resource/font
+2020-08-24 19:17:13,462 INFO [default] loaded : Sansation
+2020-08-24 19:17:13,462 INFO [default] loading sound resources
+2020-08-24 19:17:13,462 INFO [default] resource path : resource/sound
+2020-08-24 19:17:13,463 INFO [default] loading music resources
+2020-08-24 19:17:13,463 INFO [default] Resource path : resource/music
+2020-08-24 19:17:13,463 INFO [default] loading texture resources
+2020-08-24 19:17:13,463 INFO [default] Resource path : resource/texture
+2020-08-24 19:17:13,463 INFO [default] loading animation resources
+2020-08-24 19:17:13,464 INFO [default] Resource path : resource/animation
+2020-08-24 19:17:13,464 INFO [default] building engine-ui
+2020-08-24 19:17:13,683 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:17:13,683 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:17:13,683 INFO [default] building engine interface
+2020-08-24 19:17:19,336 INFO [default] building camera
+2020-08-24 19:17:19,336 INFO [default] building scene manager
+2020-08-24 19:17:19,336 INFO [default] adjusting background task time
+2020-08-24 19:17:19,336 INFO [default] adding the default scene
+2020-08-24 19:17:19,336 INFO [default] registering all scenes
+2020-08-24 19:17:19,337 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:17:19,379 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:17:19,379 INFO [default] loading scene
+2020-08-24 19:17:19,384 INFO [default] loading scene
+2020-08-24 19:17:19,384 INFO [default] loading text
+2020-08-24 19:17:19,394 INFO [default] loading text 1
+2020-08-24 19:17:19,395 INFO [default] loading text 2
+2020-08-24 19:17:19,395 INFO [default] loading text 3
+2020-08-24 19:17:19,401 INFO [default] loading scene
+2020-08-24 19:17:19,402 INFO [default] scene registration complete
+2020-08-24 19:17:19,402 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:17:19,403 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:17:19,403 INFO [default] loading scene
+2020-08-24 19:17:19,404 INFO [default] loading scene
+2020-08-24 19:17:19,404 INFO [default] loading scene
+2020-08-24 19:17:19,405 INFO [default] scene registration complete
+2020-08-24 19:17:19,405 INFO [default] setting up the engine-ui
+2020-08-24 19:17:19,410 INFO [default] update engine-ui log
+2020-08-24 19:17:19,410 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:17:19
+
+2020-08-24 19:17:19,410 INFO [default] Restoring last Scene
+2020-08-24 19:17:19,411 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:17:19,452 INFO [default] Background task completed
+2020-08-24 19:17:19,452 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:17:21,944 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:17:21,945 INFO [default] checking Scene Objects ...
+2020-08-24 19:17:21,946 INFO [default] checking World Objects ...
+2020-08-24 19:17:21,946 INFO [default] checking Screen Objects ...
+2020-08-24 19:17:21,947 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:18:26,174 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:18:26,174 INFO [default] nero development engine starting
+2020-08-24 19:18:26,174 INFO [default] loading engine configuration
+2020-08-24 19:18:26,175 INFO [default] setting up sfml render window
+2020-08-24 19:18:26,180 INFO [default] building startup screen
+2020-08-24 19:18:26,185 INFO [default] starting background task
+2020-08-24 19:18:26,279 INFO [default] building resource manager
+2020-08-24 19:18:26,281 INFO [default] loading font resources
+2020-08-24 19:18:26,281 INFO [default] Resource path : resource/font
+2020-08-24 19:18:26,282 INFO [default] loaded : Sansation
+2020-08-24 19:18:26,282 INFO [default] loading sound resources
+2020-08-24 19:18:26,282 INFO [default] resource path : resource/sound
+2020-08-24 19:18:26,282 INFO [default] loading music resources
+2020-08-24 19:18:26,282 INFO [default] Resource path : resource/music
+2020-08-24 19:18:26,282 INFO [default] loading texture resources
+2020-08-24 19:18:26,282 INFO [default] Resource path : resource/texture
+2020-08-24 19:18:26,283 INFO [default] loading animation resources
+2020-08-24 19:18:26,283 INFO [default] Resource path : resource/animation
+2020-08-24 19:18:26,283 INFO [default] building engine-ui
+2020-08-24 19:18:26,564 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:18:26,564 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:18:26,564 INFO [default] building engine interface
+2020-08-24 19:18:31,775 INFO [default] building camera
+2020-08-24 19:18:31,775 INFO [default] building scene manager
+2020-08-24 19:18:31,775 INFO [default] adjusting background task time
+2020-08-24 19:18:31,775 INFO [default] adding the default scene
+2020-08-24 19:18:31,775 INFO [default] registering all scenes
+2020-08-24 19:18:31,775 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:18:31,816 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:18:31,816 INFO [default] loading scene
+2020-08-24 19:18:31,820 INFO [default] loading scene
+2020-08-24 19:18:31,821 INFO [default] loading text
+2020-08-24 19:18:31,836 INFO [default] loading text 1
+2020-08-24 19:18:31,836 INFO [default] loading text 2
+2020-08-24 19:18:31,836 INFO [default] loading text 3
+2020-08-24 19:18:31,841 INFO [default] loading scene
+2020-08-24 19:18:31,842 INFO [default] scene registration complete
+2020-08-24 19:18:31,842 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:18:31,843 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:18:31,843 INFO [default] loading scene
+2020-08-24 19:18:31,844 INFO [default] loading scene
+2020-08-24 19:18:31,844 INFO [default] loading scene
+2020-08-24 19:18:31,844 INFO [default] scene registration complete
+2020-08-24 19:18:31,844 INFO [default] setting up the engine-ui
+2020-08-24 19:18:31,849 INFO [default] update engine-ui log
+2020-08-24 19:18:31,849 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:18:31
+
+2020-08-24 19:18:31,849 INFO [default] Restoring last Scene
+2020-08-24 19:18:31,849 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:18:31,888 INFO [default] Background task completed
+2020-08-24 19:18:31,888 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:19:15,452 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:19:15,453 INFO [default] checking Scene Objects ...
+2020-08-24 19:19:15,454 INFO [default] checking World Objects ...
+2020-08-24 19:19:15,454 INFO [default] checking Screen Objects ...
+2020-08-24 19:19:15,454 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:19:15,455 INFO [default] current mode : Scene - Play
+2020-08-24 19:19:22,591 INFO [default] current mode : Scene - Object
+2020-08-24 19:19:30,450 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:19:31,545 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:19:31,547 INFO [default] checking Scene Objects ...
+2020-08-24 19:19:31,547 INFO [default] checking World Objects ...
+2020-08-24 19:19:31,547 INFO [default] checking Screen Objects ...
+2020-08-24 19:19:31,548 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:19:31,548 INFO [default] current mode : Scene - Play
+2020-08-24 19:19:50,762 INFO [default] closing the Engine
+2020-08-24 19:19:50,762 INFO [default] stopping music
+2020-08-24 19:19:50,762 INFO [default] saving Engine Settings
+2020-08-24 19:19:50,765 INFO [default] saving all Scenes
+2020-08-24 19:19:50,830 INFO [default] 
+ ## -- Engine closed at 24/8/2020 19:19:50-- ###
+
+2020-08-24 19:20:01,981 INFO [default] Nero Game Engine v1.0.0 Copyright (c) 2016-2019 SANOU A. K. Landry
+2020-08-24 19:20:01,981 INFO [default] nero development engine starting
+2020-08-24 19:20:01,981 INFO [default] loading engine configuration
+2020-08-24 19:20:01,982 INFO [default] setting up sfml render window
+2020-08-24 19:20:01,988 INFO [default] building startup screen
+2020-08-24 19:20:01,993 INFO [default] starting background task
+2020-08-24 19:20:02,083 INFO [default] building resource manager
+2020-08-24 19:20:02,085 INFO [default] loading font resources
+2020-08-24 19:20:02,085 INFO [default] Resource path : resource/font
+2020-08-24 19:20:02,086 INFO [default] loaded : Sansation
+2020-08-24 19:20:02,086 INFO [default] loading sound resources
+2020-08-24 19:20:02,086 INFO [default] resource path : resource/sound
+2020-08-24 19:20:02,086 INFO [default] loading music resources
+2020-08-24 19:20:02,086 INFO [default] Resource path : resource/music
+2020-08-24 19:20:02,087 INFO [default] loading texture resources
+2020-08-24 19:20:02,087 INFO [default] Resource path : resource/texture
+2020-08-24 19:20:02,087 INFO [default] loading animation resources
+2020-08-24 19:20:02,087 INFO [default] Resource path : resource/animation
+2020-08-24 19:20:02,087 INFO [default] building engine-ui
+2020-08-24 19:20:02,327 INFO [default] providing engine setting to engine-ui
+2020-08-24 19:20:02,328 INFO [default] providing resource manager to engine-ui
+2020-08-24 19:20:02,328 INFO [default] building engine interface
+2020-08-24 19:20:07,960 INFO [default] building camera
+2020-08-24 19:20:07,960 INFO [default] building scene manager
+2020-08-24 19:20:07,960 INFO [default] adjusting background task time
+2020-08-24 19:20:07,960 INFO [default] adding the default scene
+2020-08-24 19:20:07,960 INFO [default] registering all scenes
+2020-08-24 19:20:07,960 INFO [default] adding scene : PhysicJointScene
+2020-08-24 19:20:08,001 INFO [default] save file detected : Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:20:08,001 INFO [default] loading scene
+2020-08-24 19:20:08,005 INFO [default] loading scene
+2020-08-24 19:20:08,006 INFO [default] loading text
+2020-08-24 19:20:08,015 INFO [default] loading text 1
+2020-08-24 19:20:08,015 INFO [default] loading text 2
+2020-08-24 19:20:08,015 INFO [default] loading text 3
+2020-08-24 19:20:08,020 INFO [default] loading scene
+2020-08-24 19:20:08,022 INFO [default] scene registration complete
+2020-08-24 19:20:08,022 INFO [default] adding scene : ## + default + ##
+2020-08-24 19:20:08,023 INFO [default] save file detected : Nero/## + default + ##/## + default + ##.json
+2020-08-24 19:20:08,023 INFO [default] loading scene
+2020-08-24 19:20:08,023 INFO [default] loading scene
+2020-08-24 19:20:08,024 INFO [default] loading scene
+2020-08-24 19:20:08,024 INFO [default] scene registration complete
+2020-08-24 19:20:08,024 INFO [default] setting up the engine-ui
+2020-08-24 19:20:08,028 INFO [default] update engine-ui log
+2020-08-24 19:20:08,029 INFO [default] Nero Game Engine --- Log file 24/8/2020 19:20:8
+
+2020-08-24 19:20:08,029 INFO [default] Restoring last Scene
+2020-08-24 19:20:08,029 INFO [default] ## -- current Scene [PhysicJointScene] -- ## 
+
+2020-08-24 19:20:08,067 INFO [default] Background task completed
+2020-08-24 19:20:08,067 INFO [default] Nero Development Engine started successfully
+2020-08-24 19:20:10,322 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:20:10,323 INFO [default] checking Scene Objects ...
+2020-08-24 19:20:10,324 INFO [default] checking World Objects ...
+2020-08-24 19:20:10,324 INFO [default] checking Screen Objects ...
+2020-08-24 19:20:10,324 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:20:10,325 INFO [default] current mode : Scene - Play
+2020-08-24 19:20:28,527 INFO [default] current mode : Scene - Object
+2020-08-24 19:20:30,768 INFO [default] current mode : Scene - Mesh
+2020-08-24 19:20:33,539 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:20:36,642 INFO [default] current mode : Scene - Object
+2020-08-24 19:20:37,661 INFO [default] playing [PhysicJointScene]
+2020-08-24 19:20:37,663 INFO [default] checking Scene Objects ...
+2020-08-24 19:20:37,663 INFO [default] checking World Objects ...
+2020-08-24 19:20:37,664 INFO [default] checking Screen Objects ...
+2020-08-24 19:20:37,664 INFO [default] PhysicJointScene Scene v0.1
+2020-08-24 19:20:37,665 INFO [default] current mode : Scene - Play
+2020-08-24 19:21:10,939 INFO [default] saving Scene [PhysicJointScene] to Nero/PhysicJointScene/PhysicJointScene.json
+2020-08-24 19:21:13,249 INFO [default] closing the Engine
+2020-08-24 19:21:13,250 INFO [default] stopping music
+2020-08-24 19:21:13,250 INFO [default] saving Engine Settings
+2020-08-24 19:21:13,253 INFO [default] saving all Scenes
+2020-08-24 19:21:13,318 INFO [default] 
+ ## -- Engine closed at 24/8/2020 19:21:13-- ###
+

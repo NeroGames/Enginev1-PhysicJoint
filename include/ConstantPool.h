@@ -15,6 +15,7 @@ namespace ng
 	    const std::string objectA			= "object_a";
 	    const std::string objectB			= "object_b";
 	    const std::string objectC			= "object_c";
+	    const std::string objectD			= "object_d";
 	    const std::string jointType			= "joint_type";
 	    const std::string ropeAnchor	    = "rope_anchor";
 	};
@@ -28,6 +29,8 @@ namespace ng
 	    const std::string wheelJoint         = "wheel_joint";
 	    const std::string weldJoint          = "weld_joint";
 	    const std::string revoluteJoint      = "revolute_joint";
+	    const std::string gearJoint          = "gear_joint";
+	    const std::string frictionJoint      = "friction_joint";
 
 	} LayerPool;
 

@@ -14,6 +14,8 @@
 #include <Nero/model/WheelJoint.h>
 #include <Nero/model/WeldJoint.h>
 #include <Nero/model/RevoluteJoint.h>
+#include <Nero/model/GearJoint.h>
+#include <Nero/model/FrictionJoint.h>
 
 namespace ng
 {
@@ -42,6 +44,7 @@ namespace ng
         	nero::PhysicObject::Ptr         mObjectA;
         	nero::PhysicObject::Ptr         mObjectB;
         	nero::PhysicObject::Ptr         mObjectC;
+        	nero::PhysicObject::Ptr         mObjectD;
 
 
 	        //01 Distance Joint
@@ -67,6 +70,12 @@ namespace ng
         	//07 Revolute Joint
         	void                            createRevoluteJoint();
         	nero::RevoluteJoint::Ptr        mRevoluteJoint;
+        	//08 Gear Joint
+        	void                            createGearJoint();
+        	nero::GearJoint::Ptr            mGearJoint;
+        	//09 Friction Joint
+        	void                            createFrictionJoint();
+        	nero::FrictionJoint::Ptr        mFrictionJoint;
 
         private:
             float                           distance(nero::PhysicObject::Ptr objectA, nero::PhysicObject::Ptr objectB);

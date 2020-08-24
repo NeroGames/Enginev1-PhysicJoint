@@ -56,7 +56,8 @@ namespace ng
 	    log("PhysicJointScene Scene v0.1");
 
         //select joint type
-	    mJointType = nero::PhysicJoint::Revolute_Joint;
+        //
+	    mJointType = nero::PhysicJoint::Gear_Joint;
 
         createJoint(mJointType);
 
@@ -325,6 +326,81 @@ namespace ng
         mRevoluteJoint = nero::RevoluteJoint::Cast(getObjectManager()->findJoint("revolute_joint"));
     }
 
+    void PhysicJointScene::createGearJoint()
+    {
+        //retrieve objects
+        auto layer   = getObjectManager()->findLayerObject(LayerPool.gearJoint);
+        if(!layer) {log("ERROR : layer not found"); return;}
+	    auto objectA = getObjectManager()->findObjectInLayer(ObjectPool.objectA, LayerPool.gearJoint);
+	    auto objectB = getObjectManager()->findObjectInLayer(ObjectPool.objectB, LayerPool.gearJoint);
+	    auto objectC = getObjectManager()->findObjectInLayer(ObjectPool.objectC, LayerPool.gearJoint);
+	    auto objectD = getObjectManager()->findObjectInLayer(ObjectPool.objectD, LayerPool.gearJoint);
+        if(!objectA || !objectB || !objectC || !objectD) {log("ERROR : object not found"); return;}
+        mObjectA = nero::PhysicObject::Cast(objectA);
+	    mObjectB = nero::PhysicObject::Cast(objectB);
+	    mObjectC = nero::PhysicObject::Cast(objectC);
+	    mObjectC = nero::PhysicObject::Cast(objectD);
+
+
+	    //////////////////////////////////////////////////////////////////////////////
+        //configure joint
+        nero::RevoluteJointProperty revoluteJoint;
+        revoluteJoint.name                = "revolute_joint";
+        revoluteJoint.collideConnected    = false;
+        revoluteJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
+        revoluteJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
+        revoluteJoint.referenceAngle      = 0.f;
+        revoluteJoint.enableLimit         = false;
+        revoluteJoint.lowerAngle          = 0.f;
+        revoluteJoint.upperAngle          = 0.f;
+        revoluteJoint.enableMotor         = false;
+        revoluteJoint.maxMotorForce       = 50.f;
+        revoluteJoint.motorSpeed          = 10.f;
+        //create joint
+        getObjectManager()->createJoint(objectC, objectA, revoluteJoint);
+        //retrieve joint
+        mRevoluteJoint = nero::RevoluteJoint::Cast(getObjectManager()->findJoint("revolute_joint"));
+        //////////////////////////////////////////////////////////////////////////////
+        //configure joint
+        nero::PrismaticJointProperty prismaticJoint;
+        prismaticJoint.name                = "prismatic_joint";
+        prismaticJoint.collideConnected    = false;
+        prismaticJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
+        prismaticJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
+        prismaticJoint.localAxisA          = sf::Vector2f(0.f, 1.f);
+        prismaticJoint.referenceAngle      = 0.f;
+        prismaticJoint.enableLimit         = true;
+        prismaticJoint.lowerTranslation    = -mPrismaticJointLimit;
+        prismaticJoint.upperTranslation    = mPrismaticJointLimit;
+        prismaticJoint.enableMotor         = true;
+        prismaticJoint.maxMotorForce       = 50.f;
+        prismaticJoint.motorSpeed          = 7.f;
+        //create joint
+        getObjectManager()->createJoint(objectD, objectB, prismaticJoint);
+        //retrieve joint
+        mPrismaticJoint = nero::PrismaticJoint::Cast(getObjectManager()->findJoint("prismatic_joint"));
+        //////////////////////////////////////////////////////////////////////////////
+
+	    //configure joint
+        nero::GearJointProperty gearJoint;
+        gearJoint.name                = "gear_joint";
+        gearJoint.collideConnected    = false;
+        gearJoint.jointAId            = mRevoluteJoint->getJointId();
+        gearJoint.jointBId            = mPrismaticJoint->getJointId();
+        gearJoint.ratio               = 1.f;
+
+        //create joint
+        getObjectManager()->createJoint(objectA, objectB, gearJoint);
+
+        //retrieve joint
+        mGearJoint = nero::GearJoint::Cast(getObjectManager()->findJoint("gear_joint"));
+    }
+
+    void PhysicJointScene::createFrictionJoint()
+    {
+
+    }
+
 	void PhysicJointScene::handleKeyboardInput(const sf::Keyboard::Key& key, const bool& isPressed)
     {
         if(mDistanceJoint && isPressed)
@@ -444,6 +520,22 @@ namespace ng
                 createRevoluteJoint();
 
                 joint_type = "Revolute Joint";
+
+            }break;
+
+            case nero::PhysicJoint::Gear_Joint:
+            {
+                createGearJoint();
+
+                joint_type = "Gear Joint";
+
+            }break;
+
+            case nero::PhysicJoint::Friction_Joint:
+            {
+                createFrictionJoint();
+
+                joint_type = "Friction Joint";
 
             }break;
         }
