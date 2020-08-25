@@ -57,7 +57,7 @@ namespace ng
 
         //select joint type
         //
-	    mJointType = nero::PhysicJoint::Gear_Joint;
+	    mJointType = nero::PhysicJoint::Wheel_Joint;
 
         createJoint(mJointType);
 
@@ -116,7 +116,7 @@ namespace ng
         prismaticJoint.lowerTranslation    = -mPrismaticJointLimit;
         prismaticJoint.upperTranslation    = mPrismaticJointLimit;
         prismaticJoint.enableMotor         = true;
-        prismaticJoint.maxMotorForce       = 50.f;
+        prismaticJoint.maxMotorTorque       = 50.f;
         prismaticJoint.motorSpeed          = 7.f;
 
         //create joint
@@ -212,27 +212,29 @@ namespace ng
 	    mObjectB = nero::PhysicObject::Cast(objectB);
 	    mObjectC = nero::PhysicObject::Cast(objectC);
 
-
 	    //configure joint (Wheel 1)
         nero::WheelJointProperty wheelJoint;
         wheelJoint.name                = "wheel_joint_a";
-        wheelJoint.collideConnected    = true;
-        wheelJoint.localAnchorA        = sf::Vector2f(0.f, 0.f);
-        wheelJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
-        wheelJoint.localAxisA          = sf::Vector2f(0.f, 1.f);
+        wheelJoint.collideConnected    = false;
+        wheelJoint.localAnchorA        = nero::b2_to_sf(mObjectA->getBody()->GetLocalPoint(mObjectB->getBody()->GetPosition()), nero::SCALE);
+        wheelJoint.localAnchorB        = nero::b2_to_sf(mObjectB->getBody()->GetLocalPoint(mObjectB->getBody()->GetPosition()), nero::SCALE);
+        wheelJoint.localAxisA          = nero::b2_to_sf(mObjectA->getBody()->GetLocalVector(b2Vec2(0.0f, 1.0f)), nero::SCALE);
         wheelJoint.referenceAngle      = 0.f;
         wheelJoint.enableMotor         = true;
-        wheelJoint.maxMotorForce       = 100.f;
+        wheelJoint.maxMotorTorque      = 100.f;
         wheelJoint.motorSpeed          = 0.f;
-        wheelJoint.frequencyHz         = 10.f;
-        wheelJoint.dampingRatio        = 0.5f;
+        wheelJoint.frequencyHz         = 4.0f;
+        wheelJoint.dampingRatio        = 0.7f;
         //create joint
         getObjectManager()->createJoint(objectA, objectB, wheelJoint);
         //retrieve joint
         mWheelJointA = nero::WheelJoint::Cast(getObjectManager()->findJoint("wheel_joint_a"));
 
-        //configure joint (Wheel 1)
+        //configure joint (Wheel 2)
         wheelJoint.name                 = "wheel_joint_b";
+         wheelJoint.localAnchorA        = nero::b2_to_sf(mObjectA->getBody()->GetLocalPoint(mObjectC->getBody()->GetPosition()), nero::SCALE);
+        wheelJoint.localAnchorB         = nero::b2_to_sf(mObjectC->getBody()->GetLocalPoint(mObjectC->getBody()->GetPosition()), nero::SCALE);
+        wheelJoint.localAxisA           = nero::b2_to_sf(mObjectA->getBody()->GetLocalVector(b2Vec2(0.0f, 1.0f)), nero::SCALE);
         wheelJoint.enableMotor          = false;
          //create joint
         getObjectManager()->createJoint(objectA, objectC, wheelJoint);
@@ -240,30 +242,9 @@ namespace ng
         mWheelJointB = nero::WheelJoint::Cast(getObjectManager()->findJoint("wheel_joint_b"));
 
 
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////
-        //configure joint (Wheel 1)
-        nero::DistanceJointProperty distanceJoint;
-        distanceJoint.name                = "distance_joint_01";
-        distanceJoint.collideConnected    = false;
-        distanceJoint.localAnchorA        = sf::Vector2f(-150.f, 95.f);
-        distanceJoint.localAnchorB        = sf::Vector2f(0.f, 0.f);
-        distanceJoint.length              = 0.f;
-        distanceJoint.frequencyHz         = 0.f;
-        distanceJoint.dampingRatio        = 0.1f;
-        //create joint
-        getObjectManager()->createJoint(objectA, objectB, distanceJoint);
-
-        //configure joint (Wheel 1)
-        distanceJoint.name                = "distance_joint_02";
-        distanceJoint.localAnchorA        = sf::Vector2f(150.f, 95.f);
-        //create joint
-        getObjectManager()->createJoint(objectA, objectC, distanceJoint);
-
         ////////////////////////////////////////////////////////////////////////////////////////////////////
         setCameraTarget(objectA);
-        updateTargetOffset(100.f, 100.f, 400.f, 0.f);
-
+        setCameraTargetOffset(100.f, 100.f, 400.f, 0.f);
     }
 
     void PhysicJointScene::createWeldJoint()
@@ -316,7 +297,7 @@ namespace ng
         revoluteJoint.lowerAngle          = 0.f;
         revoluteJoint.upperAngle          = 0.f;
         revoluteJoint.enableMotor         = true;
-        revoluteJoint.maxMotorForce       = 50.f;
+        revoluteJoint.maxMotorTorque       = 50.f;
         revoluteJoint.motorSpeed          = 10.f;
 
         //create joint
@@ -354,7 +335,7 @@ namespace ng
         revoluteJoint.lowerAngle          = 0.f;
         revoluteJoint.upperAngle          = 0.f;
         revoluteJoint.enableMotor         = false;
-        revoluteJoint.maxMotorForce       = 50.f;
+        revoluteJoint.maxMotorTorque       = 50.f;
         revoluteJoint.motorSpeed          = 10.f;
         //create joint
         getObjectManager()->createJoint(objectC, objectA, revoluteJoint);
@@ -373,7 +354,7 @@ namespace ng
         prismaticJoint.lowerTranslation    = -mPrismaticJointLimit;
         prismaticJoint.upperTranslation    = mPrismaticJointLimit;
         prismaticJoint.enableMotor         = true;
-        prismaticJoint.maxMotorForce       = 50.f;
+        prismaticJoint.maxMotorTorque       = 50.f;
         prismaticJoint.motorSpeed          = 7.f;
         //create joint
         getObjectManager()->createJoint(objectD, objectB, prismaticJoint);
